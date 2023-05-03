@@ -369,6 +369,36 @@ footer {
 }
 
 @media (width >= 1000px) {
+	.row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header .row {
+		align-items: center;
+	}
+
+	.nav__toggle {
+		display: none;
+	}
+
+	.nav__list {
+		visibility: visible;
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 1em;
+		height: auto;
+	}
+
+	.nav__item {
+		margin: 0;
+	}
+
+	.nav__item:nth-of-type(4) {
+		margin: 0;
+	}
+
 	.hero__center {
 		flex-direction: row;
 		align-items: center;
@@ -380,11 +410,6 @@ footer {
 
 	.hero__text {
 		margin-block-start: 3em;
-	}
-
-	.row {
-		display: flex;
-		justify-content: space-between;
 	}
 
 	.cards .row {
